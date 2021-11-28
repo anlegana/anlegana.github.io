@@ -1,0 +1,14 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box; //boxes inside the big box
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; //this will inherit the box sizing from the html
+}
+body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}

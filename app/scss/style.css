@@ -1,0 +1,159 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.header__logo {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  font-family: 'Arapey', serif;
+  font-size: small;
+  width: 75%;
+}
+
+@media (max-width: 63.9375em) {
+  .header__logo {
+    width: 100%;
+  }
+}
+
+.header .icon {
+  display: inline-block;
+  color: LightGrey;
+  border: 1px solid LightGrey;
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  margin-left: 2rem;
+}
+
+.header .fa-github:hover {
+  color: Black;
+}
+
+.header .fa-linkedin-in:hover {
+  color: #006cc4;
+}
+
+.header .fa-instagram:hover {
+  color: #ca00af;
+}
+
+.header__divisionline > span {
+  display: block;
+  position: relative;
+  background-color: LightGrey;
+  width: 40%;
+  height: 3px;
+  margin-left: 50%;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 31.25rem 31.25rem 31.25rem 31.25rem;
+      grid-template-rows: 31.25rem 31.25rem 31.25rem 31.25rem;
+  font-family: 'Arapey', serif;
+}
+
+@media (max-width: 63.9375em) {
+  .content {
+    display: block;
+  }
+}
+
+.biography__text {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+@media (max-width: 63.9375em) {
+  .biography__text {
+    margin-top: 2rem;
+    margin-left: 0px;
+  }
+}
+
+video {
+  height: 50vh;
+  margin-top: 5rem;
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+
+#link_github {
+  background-color: gray;
+  width: 20rem;
+  text-align: center;
+  border-radius: 1.5rem;
+}
+
+.my_skills_description {
+  margin-top: 5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .my_skills_description {
+    margin-top: 2rem;
+    margin-left: 0px;
+  }
+}
+
+.my_skills_languages {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+@media (max-width: 63.9375em) {
+  .my_skills_languages {
+    margin-top: 2rem;
+    margin-left: 0px;
+  }
+}
+
+.my_skills_first_project {
+  margin-top: 5rem;
+}
+
+@media (max-width: 63.9375em) {
+  .my_skills_first_project {
+    margin-top: 2rem;
+    margin-left: 0px;
+  }
+}
+
+.my_skills_languages_first_project {
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+@media (max-width: 63.9375em) {
+  .my_skills_languages_first_project {
+    margin-top: 2rem;
+    margin-left: 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
