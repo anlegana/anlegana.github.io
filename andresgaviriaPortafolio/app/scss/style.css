@@ -89,7 +89,7 @@ body {
 
 @media (max-width: 63.9375em) {
   .biography__text {
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 0px;
   }
 }
@@ -98,25 +98,25 @@ body {
   height: 25vh;
 }
 
-video {
+.video {
   height: 50vh;
   margin-top: 5rem;
 }
 
 @media (max-width: 63.9375em) {
-  video {
-    width: 35vh;
-    height: 35vh;
-    margin-top: 0rem;
+  .video {
+    width: 38vh;
+    height: 30vh;
+    margin-top: 2rem;
   }
 }
 
-#link {
+.link {
   text-decoration: none;
   color: white;
 }
 
-#link_github {
+.link_github {
   background-color: gray;
   width: 20rem;
   text-align: center;
@@ -124,7 +124,7 @@ video {
 }
 
 @media (max-width: 63.9375em) {
-  #link_github {
+  .link_github {
     position: relative;
     margin: 0 auto;
   }
@@ -175,5 +175,9 @@ video {
     margin-left: 0px;
     position: relative;
   }
+}
+
+.footer {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

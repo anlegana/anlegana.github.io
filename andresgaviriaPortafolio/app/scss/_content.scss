@@ -13,7 +13,7 @@
     margin-top: 5rem;
     margin-left: 2rem;
     @include breakpoint-down(medium) {
-      margin-top: 2rem;
+      margin-top: 5rem;
       margin-left: 0px;
     }
   }
@@ -21,16 +21,16 @@
     height: 25vh;
   }
 }
-video {
+.video {
   height: 50vh;
   margin-top: 5rem;
   @include breakpoint-down(medium) {
-    width: 35vh;
-    height: 35vh;
-    margin-top: 0rem;
+    width: 38vh;
+    height: 30vh;
+    margin-top: 2rem;
   }
 }
-#link {
+.link {
   text-decoration: none;
   color: white;
   &_github {
@@ -77,4 +77,8 @@ video {
       position: relative;
     }
   }
+}
+
+.footer {
+  margin: auto;
 }
