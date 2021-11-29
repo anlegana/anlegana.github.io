@@ -123,6 +123,13 @@ video {
   border-radius: 1.5rem;
 }
 
+@media (max-width: 63.9375em) {
+  #link_github {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
 .my_skills_description {
   margin-top: 5rem;
 }
@@ -166,6 +173,7 @@ video {
   .my_skills_languages_first_project {
     margin-top: 2rem;
     margin-left: 0px;
+    position: relative;
   }
 }
 /*# sourceMappingURL=style.css.map */
