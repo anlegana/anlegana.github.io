@@ -94,9 +94,21 @@ body {
   }
 }
 
+.biography__video {
+  height: 25vh;
+}
+
 video {
   height: 50vh;
   margin-top: 5rem;
+}
+
+@media (max-width: 63.9375em) {
+  video {
+    width: 35vh;
+    height: 35vh;
+    margin-top: 0rem;
+  }
 }
 
 #link {

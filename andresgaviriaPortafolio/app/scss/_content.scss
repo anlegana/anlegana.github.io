@@ -8,19 +8,27 @@
     display: block;
   }
 }
-
-.biography__text {
-  margin-top: 5rem;
-  margin-left: 2rem;
-  @include breakpoint-down(medium) {
-    margin-top: 2rem;
-    margin-left: 0px;
+.biography {
+  &__text {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    @include breakpoint-down(medium) {
+      margin-top: 2rem;
+      margin-left: 0px;
+    }
+  }
+  &__video {
+    height: 25vh;
   }
 }
-
 video {
   height: 50vh;
   margin-top: 5rem;
+  @include breakpoint-down(medium) {
+    width: 35vh;
+    height: 35vh;
+    margin-top: 0rem;
+  }
 }
 #link {
   text-decoration: none;
