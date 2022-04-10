@@ -1,9 +1,8 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 31.25rem 31.25rem 31.25rem 31.25rem;
+  grid-template-rows: 31.25rem 31.25rem 31.25rem;
   font-family: 'Arapey', serif;
-
   @include breakpoint-down(medium) {
     display: block;
   }
@@ -82,5 +81,66 @@
       margin-left: 0px;
       position: relative;
     }
+  }
+}
+
+.button_projects {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: 2px solid (0, 0, 0, 0.5);
+  box-shadow: 2px 2x 10px (0, 0, 0, 0.5);
+  background-color: white;
+  border-color: grey;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    background-color: grey;
+  }
+}
+
+.projects {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.carts {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include breakpoint-down(medium) {
+    justify-content: center;
+    display: block;
+    padding-left: 0.5rem;
+    width: 100%;
+  }
+}
+.cart {
+  text-align: center;
+  padding: 50px;
+  color: white;
+  margin: 12px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('/andresgaviriaPortafolio/software-developer.jpg');
+  width: 400px;
+  @include breakpoint-down(medium) {
+    padding: auto;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    margin: 12px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url('/andresgaviriaPortafolio/software-developer.jpg');
   }
 }
