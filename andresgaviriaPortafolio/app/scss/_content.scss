@@ -1,150 +1,151 @@
 .content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 31.25rem 31.25rem 31.25rem;
-  font-family: 'Arapey', serif;
-  @include breakpoint-down(medium) {
-    display: block;
-  }
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 31.25rem 31.25rem 31.25rem;
+	font-family: "Arapey", serif;
+	font-size: 1.5rem;
+	@include breakpoint-down(medium) {
+		display: block;
+	}
 }
 .biography {
-  &__text {
-    margin-top: 5rem;
-    margin-left: 2rem;
-    @include breakpoint-down(medium) {
-      margin-top: 15rem;
-      margin-left: 0px;
-    }
-    @include breakpoint-down(small) {
-      margin-top: 5rem;
-      margin-left: 0px;
-    }
-  }
-  &__video {
-    height: 25vh;
-  }
+	&__text {
+		margin-top: 5rem;
+		margin-left: 2rem;
+		@include breakpoint-down(medium) {
+			margin-top: 15rem;
+			margin-left: 0px;
+		}
+		@include breakpoint-down(small) {
+			margin-top: 5rem;
+			margin-left: 0px;
+		}
+	}
+	&__video {
+		height: 25vh;
+	}
 }
 .video {
-  height: 50vh;
-  margin-top: 5rem;
-  @include breakpoint-down(small) {
-    width: 38vh;
-    height: 30vh;
-    margin-top: 2rem;
-  }
+	height: 50vh;
+	margin-top: 5rem;
+	@include breakpoint-down(small) {
+		width: 38vh;
+		height: 30vh;
+		margin-top: 2rem;
+	}
 }
 .link {
-  text-decoration: none;
-  color: white;
-  &_github {
-    background-color: gray;
-    width: 20rem;
-    text-align: center;
-    border-radius: 1.5rem;
-    @include breakpoint-down(medium) {
-      position: relative;
-      margin: 0 auto;
-    }
-  }
+	text-decoration: none;
+	color: white;
+	&_github {
+		background-color: gray;
+		width: 20rem;
+		text-align: center;
+		border-radius: 1.5rem;
+		@include breakpoint-down(medium) {
+			position: relative;
+			margin: 0 auto;
+		}
+	}
 }
 .skills_implemented {
-  background-color: gray;
-  width: 20rem;
-  text-align: center;
-  border-radius: 1.5rem;
+	background-color: gray;
+	width: 20rem;
+	text-align: center;
+	border-radius: 1.5rem;
 }
 
 .my_skills {
-  &_description {
-    margin-top: 5rem;
-    @include breakpoint-down(medium) {
-      margin-top: 2rem;
-      margin-left: 0px;
-    }
-  }
-  &_languages {
-    margin-top: 5rem;
-    margin-left: 2rem;
-    @include breakpoint-down(medium) {
-      margin-top: 2rem;
-      margin-left: 0px;
-    }
-  }
-  &_first_project {
-    margin-top: 5rem;
-    @include breakpoint-down(medium) {
-      margin-top: 2rem;
-      margin-left: 0px;
-    }
-  }
-  &_languages_first_project {
-    margin-top: 5rem;
-    margin-left: 2rem;
-    @include breakpoint-down(medium) {
-      margin-top: 2rem;
-      margin-left: 0px;
-      position: relative;
-    }
-  }
+	&_description {
+		margin-top: 5rem;
+		@include breakpoint-down(medium) {
+			margin-top: 2rem;
+			margin-left: 0px;
+		}
+	}
+	&_languages {
+		margin-top: 5rem;
+		margin-left: 2rem;
+		@include breakpoint-down(medium) {
+			margin-top: 2rem;
+			margin-left: 0px;
+		}
+	}
+	&_first_project {
+		margin-top: 5rem;
+		@include breakpoint-down(medium) {
+			margin-top: 2rem;
+			margin-left: 0px;
+		}
+	}
+	&_languages_first_project {
+		margin-top: 5rem;
+		margin-left: 2rem;
+		@include breakpoint-down(medium) {
+			margin-top: 2rem;
+			margin-left: 0px;
+			position: relative;
+		}
+	}
 }
 
 .button_projects {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 15px;
-  border: 2px solid (0, 0, 0, 0.5);
-  box-shadow: 2px 2x 10px (0, 0, 0, 0.5);
-  background-color: white;
-  border-color: grey;
-  color: black;
-  text-decoration: none;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 15px;
+	border: 2px solid (0, 0, 0, 0.5);
+	box-shadow: 2px 2x 10px (0, 0, 0, 0.5);
+	background-color: white;
+	border-color: grey;
+	color: black;
+	text-decoration: none;
 
-  &:hover {
-    background-color: grey;
-  }
+	&:hover {
+		background-color: grey;
+	}
 }
 
 .projects {
-  grid-column-start: 1;
-  grid-column-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 .carts {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  @include breakpoint-down(small) {
-    justify-content: center;
-    display: block;
-    padding-left: 0.5rem;
-  }
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	@include breakpoint-down(small) {
+		justify-content: center;
+		display: block;
+		padding-left: 0.5rem;
+	}
 }
 .cart {
-  text-align: center;
-  padding: 50px;
-  color: white;
-  margin: 12px;
-  border-radius: 15px;
-  width: 100%;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('/andresgaviriaPortafolio/software-developer.jpg');
+	text-align: center;
+	padding: 50px;
+	color: black;
+	margin: 12px;
+	border-radius: 15px;
+	width: 100%;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("/andresgaviriaPortafolio/software-developer.jpg");
 
-  @include breakpoint-down(small) {
-    margin-left: 0%;
-    text-align: center;
-    color: white;
-    //margin: 12px;
-    border-radius: 15px;
-    //width: 200px;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url('/andresgaviriaPortafolio/software-developer.jpg');
-  }
+	@include breakpoint-down(small) {
+		margin-left: 0%;
+		text-align: center;
+		color: black;
+		//margin: 12px;
+		border-radius: 15px;
+		//width: 200px;
+		background-image: linear-gradient(
+				0deg,
+				rgba(0, 0, 0, 0.5),
+				rgba(0, 0, 0, 0.5)
+			),
+			url("/andresgaviriaPortafolio/software-developer.jpg");
+	}
 }
